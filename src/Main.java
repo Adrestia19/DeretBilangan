@@ -19,21 +19,18 @@ public class Main {
                 String inputNIM = UserInput.next();
 //validasi input NIM, jika input NIM sama dengan 10 karakter maka registrasi sukses
                 if (inputNIM.length() == 10) {
-                    System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    System.out.print("\n");
+                    System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
                     System.out.println("Registrasi Sukses..");
 //jika registrasi sukses maka akan menampilkan hasil input nama dan hasil input nim
                     System.out.println("Selamat datang " + InputNama + " [NIM " + inputNIM + "].. ^^v");
                     System.out.print("\n");
 //Registrasi selesai
                     System.out.println("Mari belajar macam-macam deret bilangan..");
-                    System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
-                    System.out.print("\n");
+                    System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n");
 //input angka untuk menentukan bilangan genap, bilangan ganjil dan bilangan fibonacci
                     System.out.print("Masukkan Sembarang Angka [5..20] : ");
                     int inputAngka = UserInput.nextInt();
-                    System.out.print("\n");
-                    System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
+                    System.out.println("\n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 //validasi kondisi jika input angka lebih dari sama dengan 5 dan kurang dari sama dengan 20
                     if (inputAngka >= 5 && inputAngka <= 20) {
                         System.out.println("Deret Bilangan");
