@@ -4,13 +4,14 @@ public class Main {
         Scanner UserInput = new Scanner(System.in);
         boolean mulaiProgram = true;
         boolean repeatProgram = true;
+        int minLengthNama = 1, maxLengthNama = 25;
 //Memulai program
         while (mulaiProgram) {
 //Input nama untuk registrasi
             System.out.print("Masukkan nama Anda [1..25] : ");
-            String InputNama = UserInput.next();
+            String InputNama = UserInput.nextLine();
 //validasi input nama jika kurang dari 1 karakter dan lebih dari sama dengan 25 karakter
-            if (InputNama.length() <= 1 || InputNama.length() >= 25) {
+            if (InputNama.length() <= minLengthNama || InputNama.length() >= maxLengthNama) {
                 System.out.println("Anda memasukkan " + InputNama + ".\nNama tersebut tidak valid karena kurang dari sama dengan 1 karakter atau lebih dari sama dengan 25 karakter");
                 repeatProgram = true;
             } else {
